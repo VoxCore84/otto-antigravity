@@ -1,0 +1,63 @@
+{
+  "name": "otto-antigravity",
+  "displayName": "OTTO - Antigravity Optimizer",
+  "description": "Self-healing optimization monitor for Antigravity IDE",
+  "version": "1.0.0",
+  "publisher": "voxcore",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VoxCore84/otto-antigravity"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "otto.checkHealth",
+        "title": "OTTO: Check Optimization Health"
+      },
+      {
+        "command": "otto.fixAll",
+        "title": "OTTO: Fix All Regressions"
+      },
+      {
+        "command": "otto.showReport",
+        "title": "OTTO: Show Full Report"
+      }
+    ],
+    "configuration": {
+      "title": "OTTO Antigravity Optimizer",
+      "properties": {
+        "otto.pythonPath": {
+          "type": "string",
+          "default": "python",
+          "description": "Path to the Python interpreter"
+        },
+        "otto.toolkitDir": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the otto package directory (leave empty for auto-detect)"
+        },
+        "otto.checkIntervalMinutes": {
+          "type": "number",
+          "default": 30,
+          "description": "How often to run periodic health checks (minutes)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --target=node18",
+    "watch": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --target=node18 --watch"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+*.bak
+otto/watchdog.log
+otto/baseline.json
+extension/node_modules/
+extension/dist/
+.vscode/

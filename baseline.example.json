@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "created": "2026-03-11",
+  "settings_critical": {
+    "telemetry.telemetryLevel": "off",
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "editor.minimap.enabled": false,
+    "search.followSymlinks": false,
+    "workbench.startupEditor": "none",
+    "workbench.enableExperiments": false,
+    "git.autorefresh": false,
+    "timeline.enabled": false,
+    "extensions.ignoreRecommendations": true
+  },
+  "argv_critical": {
+    "disable-telemetry": true,
+    "enable-crash-reporter": false,
+    "disable-renderer-backgrounding": true,
+    "disable-background-timer-throttling": true
+  },
+  "argv_js_flags_required": ["--max-old-space-size=4096", "--optimize-for-size", "--lite-mode"],
+  "disabled_extensions": [
+    "clojure", "coffeescript", "csharp", "dart", "fsharp", "go",
+    "groovy", "grunt", "gulp", "handlebars", "hlsl", "jake",
+    "java", "julia", "latex", "less", "objective-c",
+    "perl", "php", "php-language-features", "pug", "r", "razor",
+    "restructuredtext", "ruby", "rust", "scss", "shaderlab",
+    "swift", "typescript-basics", "typescript-language-features", "vb"
+  ],
+  "db_permissions": {
+    "agent_prefs_b64": ""
+  },
+  "db_journal_mode": "wal"
+}
