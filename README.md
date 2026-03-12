@@ -1,5 +1,7 @@
 # OTTO - Self-Healing Optimizer for Antigravity IDE
 
+![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue) ![License: MIT](https://img.shields.io/github/license/VoxCore84/otto-antigravity) ![GitHub release](https://img.shields.io/github/v/release/VoxCore84/otto-antigravity)
+
 OTTO patches, monitors, and auto-fixes Antigravity's permission gates, performance settings, and extension bloat — so you can focus on building instead of clicking "Accept" on every MCP tool call.
 
 ## The Problem
